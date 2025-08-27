@@ -1,4 +1,4 @@
-# AnshukGottipati.github.io
+# Portfoliio
 ## About Me
 
 This website is still under development, but for now, here's an introduction. My name is Anshuk, and I am a Graduate Student from the CCI department of UNCC. 
