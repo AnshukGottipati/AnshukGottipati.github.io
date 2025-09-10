@@ -1,7 +1,56 @@
 # Portfoliio
-## About Me
+## Pre-Processing 
+```
+import pandas as pd
+import matplotlib.pyplot as plt
 
-This website is still under development, but for now, here's an introduction. My name is Anshuk, and I am a Graduate Student from the CCI department of UNCC. 
-I have quite a lot of projects going on right now, along with creating this website, but one of the things I am focusing on is setting up a server to self-host 
-a password manager and access it via a sub-domain. The current plan is to run a Docker image of the service vaultwarden on an old OptiPlex and then connect it to Cloudflare
-using tunnels.
+
+df = pd.read_csv('./global-data-on-sustainable-energy(1).csv')
+
+
+wanted = {"United States", "Canada", "United Kingdom"}
+
+
+sub = df[df["Entity"].isin(wanted)]
+
+
+pivot = sub.pivot(index="Year", columns="Entity", values="gdp_growth").sort_index()
+
+plt.figure()  
+for ent in pivot.columns:
+    plt.plot(pivot.index, pivot[ent], marker="o", label=ent)
+
+plt.title("gdp_growth over time — selected entities")
+plt.xlabel("Year")
+plt.ylabel("gdp_growth(%)")
+plt.legend()
+plt.grid(True, alpha=0.3)
+plt.tight_layout()
+plt.show()
+
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+wanted = {"United States", "Canada", "United Kingdom"}
+
+
+sub = df[df["Entity"].isin(wanted)]
+
+
+pivot = sub.pivot(index="Year", columns="Entity", values="Renewable energy share in the total final energy consumption (%)").sort_index()
+
+plt.figure()  
+for ent in pivot.columns:
+    plt.plot(pivot.index, pivot[ent], marker="o", label=ent)
+
+plt.title("Renewable energy share in the total final energy consumption (%) over time")
+plt.xlabel("Year")
+plt.ylabel("Renewable energy share(%)")
+plt.legend()
+plt.grid(True, alpha=0.3)
+plt.tight_layout()
+plt.show()
+```
+
