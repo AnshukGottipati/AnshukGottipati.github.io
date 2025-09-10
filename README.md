@@ -53,7 +53,14 @@ plt.grid(True, alpha=0.3)
 plt.tight_layout()
 plt.show()
 ```
-
+## Question: does gdp growth affect how much is spent investing into renewable energy?
 ## Graphs 
 ![alt text](https://github.com/AnshukGottipati/AnshukGottipati.github.io/blob/68c5c112904bb44eeeb9d6059ff1fe66eda14c94/graph1.png?raw=true)
+
+This graph is showing a downward trend in gdp_growth for three countries.
 ![alt text](https://github.com/AnshukGottipati/AnshukGottipati.github.io/blob/68c5c112904bb44eeeb9d6059ff1fe66eda14c94/graph2.png?raw=true)
+
+This graph is showing a a slow increase for the US and the UK but Canadas growth seemes to have stagnated.
+
+This could mean that gdp_growth does not affect the renewable growth since as an example 2008's financial crisis did not affect the Renewable % at all.
+
