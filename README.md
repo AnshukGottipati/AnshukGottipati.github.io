@@ -54,3 +54,6 @@ plt.tight_layout()
 plt.show()
 ```
 
+## Graphs 
+![alt text](https://github.com/AnshukGottipati/AnshukGottipati.github.io/blob/68c5c112904bb44eeeb9d6059ff1fe66eda14c94/graph1.png?raw=true)
+![alt text](https://github.com/AnshukGottipati/AnshukGottipati.github.io/blob/68c5c112904bb44eeeb9d6059ff1fe66eda14c94/graph2.png?raw=true)
